@@ -22,7 +22,7 @@ const horoscope = [
   // TODO: recupère l'élément <div id="horoscope">
   const listOfSigns = document.querySelector('div#horoscope')
 
-  listOfSigns.innerHTML = '';
+  listOfSigns.innerHTML = ''; /* pour vider la balise */
 
   for (const item of horoscope) {
       // TODO: remplace le console.log par le code qui ajoute un article
