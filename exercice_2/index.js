@@ -16,11 +16,14 @@ const horoscope = [
       description: 'La personne développeuse qui protège son code comme une maman lionne avec ses petits. Elle vous donnera un coup de patte si vous touchez à sa précieuse base de données.',
     }
   ];
-  
-  // TODO: recupère l'élément <div id="horoscope">
-  const jeNeSaisPasCommentLaNommer = document.querySelectorAll("#horoscope")
 
-  
+  // Remplace les TODO par le bon code pour résoudre l’exercice :
+
+  // TODO: recupère l'élément <div id="horoscope">
+  const listOfSigns = document.querySelector('div#horoscope')
+
+  listOfSigns.innerHTML = '';
+
   for (const item of horoscope) {
       // TODO: remplace le console.log par le code qui ajoute un article
       // pour chaque item avec le format suivant :
@@ -28,5 +31,8 @@ const horoscope = [
       //   <h2>Sign</h2>
       //   <p>Description</p>
       // </article>
-      console.log(item.sign, item.description);
+     // console.log(item.sign, item.description);
+     
+     listOfSigns.innerHTML += `<h2>${item.sign}</h2>`;
+     listOfSigns.innerHTML += `<p>${item.description}</p>`;
   }
