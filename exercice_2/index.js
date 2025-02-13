@@ -20,7 +20,7 @@ const horoscope = [
   // Remplace les TODO par le bon code pour résoudre l’exercice :
 
   // TODO: recupère l'élément <div id="horoscope">
-  const listOfSigns = document.querySelector('div#horoscope')
+  let listOfSigns = document.querySelector('div#horoscope')
 
   listOfSigns.innerHTML = ''; /* pour vider la balise */
 
@@ -32,7 +32,11 @@ const horoscope = [
       //   <p>Description</p>
       // </article>
      // console.log(item.sign, item.description);
-     
-     listOfSigns.innerHTML += `<h2>${item.sign}</h2>`;
+     balise.innerHTML += `
+     <article>
+    <h2>${item.sign}</h2>
+    <p>${item.description}</p>
+    </article>`
+/*      listOfSigns.innerHTML += `<h2>${item.sign}</h2>`;
      listOfSigns.innerHTML += `<p>${item.description}</p>`;
-  }
+ */  }

@@ -15,7 +15,7 @@ const clickerCounter = document.querySelector('button#counter');
 let count = 0;
 
 clickerCounter.addEventListener('click', () => {
-    let newCount = count++;
+    count++;
     clickerCounter.innerText = `${count} clics!`
 })
 
